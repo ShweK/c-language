@@ -37,5 +37,5 @@ int is_device_on(uint8_t *ptr, int bit)
     //Step1 : calculate byte index 
     int byte_index = bit/8;
     int bit_index = bit%8;
-    return (**(ptr + byte_index) & (1U << bit_index));
+    return (*(ptr + byte_index) & (1U << bit_index));
 }

@@ -24,8 +24,7 @@ void dectoBin(int dec, char *bin, int size)
         bin[i] = temp[index -1 -i];
         printf("bin[%d]:%d \n",i,bin[i]);
     }
-    bin[index] = '\0'; // to convert to string
-
+    bin[index] = '\0'; // null terminate the string
 }
 
 

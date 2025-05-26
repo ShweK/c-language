@@ -38,7 +38,7 @@ unsigned int make_mask(int pos, int width){
     return mask;
 
     /*another easy way without while loop*/
-    //return (1U<<width-1)<<pos; 
+    //return (1U<<width)-1)<<pos; 
 }
 
 void set_field(unsigned int *reg, int val, int pos, int width){
